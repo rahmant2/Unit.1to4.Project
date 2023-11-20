@@ -1,0 +1,33 @@
+Calorie Calculator Design Document
+1. Overview
+The Calorie Calculator is a Java program designed to assist users in determining their daily caloric needs based on their weight, height, age, and gender. Additionally, the program allows users to track their daily food intake and provides feedback based on their specified goal (maintain weight, lose weight, or gain weight).
+2. Features
+User input for weight, height, age, and gender.
+Calculation of Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE) based on the Harris-Benedict equation.
+Goal selection for maintaining, losing, or gaining weight.
+Food tracking with macronutrient breakdown (protein, carbs, fats) and calorie count.
+Summary display of total calories and macronutrients consumed.
+Feedback based on the user's initial goal.
+3.1. UserInfo Class
+Represents user information including weight, height, age, and gender.
+Includes toString() method, which will display the user's information so that they can confirm if it is correct or not.
+3.2. CalorieCalculator Class
+Handles the calculation of BMR and TDEE based on user information.
+Provides methods for calculating BMR, TDEE, and retrieving TDEE.
+3.3. Main Class
+Acts as the entry point for the program.
+Handles user input, displays menu options, and controls the flow of the program.
+Uses instances of UserInfo and CalorieCalculator to manage user information and calculations.
+4.1. UserInfo Class
+Store user information (weight, height, age, gender).
+No calculations or interactions with the user.
+4.2. CalorieCalculator Class
+Calculate BMR and TDEE based on Harris-Benedict equation.
+Manage TDEE calculation for different goals (maintain, lose, gain weight).
+Provide TDEE to the Main class for display.
+4.3. Main Class
+Handle user input and display.
+Manage the overall flow of the program.
+Utilize instances of UserInfo and CalorieCalculator for user information and calculations.
+5. Conclusion
+The Calorie Calculator program uses object-oriented principles to organize code and enhance maintainability. It separates concerns into distinct classes, providing a clear structure for calculations, user information, and program flow. The design facilitates future modifications and extensions to the program.
